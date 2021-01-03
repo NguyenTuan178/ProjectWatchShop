@@ -1,6 +1,9 @@
 package controller;
+import bean.Product;
 import bean.ProductDao;
+import db.ConnectionDB;
 import enity.ProductDao1;
+import enity.ProductEntity;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,6 +20,8 @@ public class ProductDaoControll extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        
+        Collection<Product> value = new enity.ProductMan().getProductMan();
+        request.setAttribute("ProductMan", value);
+        request.getRequestDispatcher("dssanpham.jsp").forward(request,response);
     }
 }

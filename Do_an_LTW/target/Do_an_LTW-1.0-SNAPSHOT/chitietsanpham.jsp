@@ -125,7 +125,7 @@
 
 
             <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12" data-sticky_column>
-<%--                <c:forEach items="${ProductDaoList}" var="p">--%>
+
                 <div id="wrapper-detail" class="product-page">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -499,7 +499,8 @@
                         </div>
                     </div>
                 </div>
-<%--                </c:forEach>--%>
+
+
                 <div class="col-md-12 col-sm-12 col-xs-12  list-like">
                     <div id="like">
                         <div class="title-like">
